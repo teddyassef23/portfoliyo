@@ -1,0 +1,214 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-style: normal;
+}
+
+.top-header{
+  display: flex;
+  justify-content: space-between;
+  
+  height: 8vh;
+  align-items: center;
+ 
+  background-color: black;
+}
+.name
+
+{
+  background-color: rgb(57, 142, 142);
+  height: 5vh;
+  width: 15vw;
+  align-items: center;
+  justify-items: center;
+   margin-left: 2%;
+}
+h2{
+  margin-top: 1vh;
+  margin-left: 7%;
+}
+.mainu{
+  margin-right: 5%;
+  font-size: large;
+  font-style:unset;
+  
+}
+
+header{
+  width: 100%;
+  height: 30vh;
+  background-image: url('./../images/02-hero-bg.jpg');
+  filter: sepia(30%) hue-rotate(180deg) saturate(400%);  
+}
+
+.about{
+  margin-top: 10vh;
+  display: flex;
+  
+}
+h3{
+  font-size:200%;
+  color: rgb(51, 114, 118);
+}
+.side{
+  margin-left: 10vw;
+  justify-content: flex-start;
+ 
+}
+.side .con{
+  margin-left: -15px;
+}
+.main{
+  margin-left: 3vw;
+  margin-right: 15vw;
+}
+.contact a{
+  margin: 2vw;
+
+}
+.vertical {
+  border-left: 6px solid rgb(63, 96, 86);
+  height: 100%;
+  margin-left: 10px;
+}
+.contianer{
+  margin-left: -4vw;
+  padding-left: -19vw;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.mainu a{
+  color: rgb(94, 208, 208);
+  margin: 2px;
+}
+a:hover{
+  color: rgb(5, 34, 38);
+  background-color: rgb(15, 165, 153);
+}
+
+.larg-img{
+  background-image: url("./../images/information-technology.jpg");
+  border-style: solid;
+  height: 30vh;
+  width: 66vw;
+  margin-left: 2vw;
+  background-size: contain;
+}
+
+.small-img{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2vw;
+  margin-left: 2vw;
+}
+/*  */
+.small-img .img1-1 {
+  background-image: url("./../images/Developer.jpg");
+  object-fit: cover;
+  background-size: contain;
+  width: 30.7vw;
+  height: 14.3vh;
+  margin-right: 2vw;
+  box-shadow: 10px 5px 5px rgb(78, 76, 76);
+}
+.small-img .img1-2 {
+  background-image: url("./../images/security.jpg");
+  object-fit: cover;
+  width: 30.7vw;
+  height: 14.3vh;
+  background-size: contain;
+  
+  box-shadow: 10px 5px 5px rgb(78, 76, 76);
+}
+.small-img .img1-3 {
+  width: 30.7vw;
+  height: 14.3vh;
+  margin-right: 2vw;
+  margin-top: 2vh;
+  box-shadow: 10px 5px 5px rgb(78, 76, 76);
+  background-image: url("./../images/codeing.jpeg");
+  background-size: contain;
+}
+.small-img .img1-4 {
+  width: 30.7vw;
+  height: 14.3vh;
+  margin-top: 2vh;
+  box-shadow: 10px 5px 5px rgb(78, 76, 76);
+  background-image: url("./../images/Cisco.jpg");
+  background-size: contain;
+}
+
+.img1{
+  
+  margin: 10px;
+}
+.img1 img{
+  width: 26.7vw;
+  height: 14.3vh;
+  box-shadow: 10px 5px 5px rgb(78, 76, 76);
+} 
+.larg-img img{
+  height: 29.5vh;
+  width: 55.7vw;
+  box-shadow: 10px 5px 5px rgb(78, 76, 76);
+}
+.img1-1 p span,
+.img1-2 p span,
+.img1-3 p span,
+.img1-4 p span
+{
+  background-color: rgb(57, 142, 142);
+  height: 5vh;
+  margin-left: 2%;
+  margin-top: 10%;
+}
+
+.img1-1:hover,
+.img1-2:hover,
+.img1-3:hover,
+.img1-4:hover
+{
+  filter:grayscale(85%);
+  box-shadow: 20px 15px 15px rgb(49, 48, 48);
+}
+.img1 img:hover{
+ 
+  box-shadow: 20px 15px 15px red;
+  
+}
+
+@media only screen and (max-width: 750px) {
+  
+  .about{
+    flex-direction: column;
+  }
+  h3{
+    text-decoration: underline;
+    margin-bottom: 10px;
+
+  }
+  .vertical {
+    border-left: 6px solid rgb(63, 96, 86);
+  }
+  .small-img
+    {
+      flex-direction: column;
+  }
+  .small-img .img1-1,
+  .small-img .img1-2,
+  .small-img .img1-3,
+  .small-img .img1-4{
+    width: 64vw;
+  }
+  .img1 img{
+    width: 53.3vw;
+    height: 14.3vh;
+    box-shadow: 10px 5px 5px rgb(78, 76, 76);
+  } 
+  .small-img .img1-2{
+    margin-top: 2vh;
+  }
+
+}
